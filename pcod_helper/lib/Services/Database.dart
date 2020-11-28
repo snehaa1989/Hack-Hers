@@ -18,7 +18,7 @@ class DataBaseService{
         "baldness" : baldness,
         "Darkening" : Darkening,
         "Headache" : Headache,
-        "id"        : documentReference.documentID,
+
 
       });
 
