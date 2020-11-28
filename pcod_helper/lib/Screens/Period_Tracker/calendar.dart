@@ -168,7 +168,7 @@ class _CalendarState extends State<Calendar> {
     _selectedEvents.add(event);
     _fetchEvents();
 
-    Navigator.pop(context);
+    Navigator.of(context, rootNavigator: true).pop();
   }
 
   // Delete doesnt refresh yet, thats it, then done!
