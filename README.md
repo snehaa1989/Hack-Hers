@@ -40,7 +40,7 @@ And before you know it, you are right back to where you started.
 
 And your PCOS symptoms come back with a vengeance.
 for Millions of women suffering from PCOS/PCOD, sometimes its just so hard to stay motivated. To keep doing what you know you should be doing.
-And we get that. In an attempt to make Women, and society in general, aware about PCOS/PCOD, we have come up with this app, Pcod-helper. We aim to make life easier for women who feel that they cannot do anything about this condition, We hope this app will help them in any way possible
+And we get that. In an attempt to make Women, and society in general, aware about PCOS/PCOD, we have come up with this app, Pcod-helper. We aim to make life easier for women who feel that they cannot do anything about this condition, We hope this app will help them in any way possible.
 
 ![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)
  
