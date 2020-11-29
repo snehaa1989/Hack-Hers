@@ -134,7 +134,7 @@ class _ProductPageState extends State<ProductPage> {
                               Container(
                                 width: MediaQuery.of(context).size.width * 2.8/3,
                                 height: 200,
-                                
+
                                 child: Image.asset("assets/$selectedImg.jpg", fit: BoxFit.fill,),
                               )
                             ],

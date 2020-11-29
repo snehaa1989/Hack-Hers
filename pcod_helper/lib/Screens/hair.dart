@@ -101,27 +101,7 @@ class _HairPageState extends State<HairPage> {
                   ],
                 ),
               ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                color: Colors.white,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        FaIcon(FontAwesomeIcons.calendar),
-                        Text('Today')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        Icon(Icons.settings),
-                        Text('Settings')
-                      ],
-                    ),
-                  ],
-                ),
-              )
+
             ],
           )
         ],
