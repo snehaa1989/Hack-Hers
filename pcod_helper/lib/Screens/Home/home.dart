@@ -16,6 +16,7 @@ class _HomeState extends State<Home> {
   Auth _auth = new Auth();
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text("Home",
@@ -64,12 +65,16 @@ class _HomeState extends State<Home> {
                               MaterialPageRoute(builder: (context) => Test()),
                             );
                           },
-                          child: Container(
-
-                            width:  MediaQuery.of(context).size.width/3,
-                            height: MediaQuery.of(context).size.height/4,
-                              child: Image.asset("Images/test.PNG", fit: BoxFit.contain,)
-                          ),
+                          child: Column(
+                            children: [
+                              Container(
+                                  width:  MediaQuery.of(context).size.width/3,
+                                  height: MediaQuery.of(context).size.height/4,
+                                  child: Image.asset("Images/test.PNG", fit: BoxFit.contain,)
+                              ),
+                              Text("Test", style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                            ],
+                          )
                         ),
                       ),
                       Card(
@@ -83,11 +88,16 @@ class _HomeState extends State<Home> {
                               MaterialPageRoute(builder: (context) => AboutSection()),
                             );
                           },
-                          child: Container(
-                            width:  MediaQuery.of(context).size.width/3,
-                            height: MediaQuery.of(context).size.height/4,
-                              child: Image.asset("Images/about.png", fit: BoxFit.contain,)
-                          ),
+                          child: Column(
+                            children: [
+                              Container(
+                                  width:  MediaQuery.of(context).size.width/3,
+                                  height: MediaQuery.of(context).size.height/4,
+                                  child: Image.asset("Images/about.png", fit: BoxFit.contain,)
+                              ),
+                              Text("About", style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                            ],
+                          )
                         ),
                       ),
                     ],
@@ -105,10 +115,15 @@ class _HomeState extends State<Home> {
                               MaterialPageRoute(builder: (context) => Fitness()),
                             );
                           },
-                          child: Container(
-                            width:  MediaQuery.of(context).size.width * 1/3,
-                            height: MediaQuery.of(context).size.height/4,
-                            child: Image.asset("Images/fitness.PNG", fit: BoxFit.contain,),
+                          child: Column(
+                            children: [
+                              Container(
+                                width:  MediaQuery.of(context).size.width * 1/3,
+                                height: MediaQuery.of(context).size.height/4,
+                                child: Image.asset("Images/fitness.PNG", fit: BoxFit.contain,),
+                              ),
+                              Text("Fitness", style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+                            ],
                           ),
                         ),
                       ),
@@ -122,11 +137,16 @@ class _HomeState extends State<Home> {
                             MaterialPageRoute(builder: (context) => Tracker()),
                           );
                         },
-                        child: Container(
-                            width:  MediaQuery.of(context).size.width * 1/3,
-                            height: MediaQuery.of(context).size.height/4,
-                          child: Image.asset("Images/tracker.png", fit: BoxFit.contain,),
-                        ),
+                        child: Column(
+                          children: [
+                            Container(
+                              width:  MediaQuery.of(context).size.width * 1/3,
+                              height: MediaQuery.of(context).size.height/4,
+                              child: Image.asset("Images/tracker.png", fit: BoxFit.contain,),
+                            ),
+                            Text("Tracker", style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold)),
+                          ],
+                        )
                       ),),
                     ],
                   ),
@@ -134,13 +154,23 @@ class _HomeState extends State<Home> {
               ),
             )
           ),
-          RaisedButton(
-            onPressed: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Profile()),
-              );
-            },
+          Container(
+            width: MediaQuery.of(context).size.width - 100,
+            child: RaisedButton(
+              color: Colors.black,
+              child: Container(
+                color: Colors.pink,
+                height: 100,
+                width: MediaQuery.of(context).size.width *2.58 /3,
+                child: Center(child: Text("Profile", style : TextStyle(fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold)) ,),
+              ),
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Profile()),
+                );
+              },
+            ),
           )
         ],
       )
