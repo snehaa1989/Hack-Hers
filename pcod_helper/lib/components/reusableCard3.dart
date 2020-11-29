@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'item_Name.dart';
 //import '../screens/info_page.dart';
 import '../Screens/yoga1.dart';
-
+import '../Screens/hair.dart';
 class ReusableCard3 extends StatelessWidget {
   ReusableCard3({@required this.images,@required this.head,@required this.desc});
   //final Color colors;
@@ -16,7 +16,7 @@ class ReusableCard3 extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             Navigator.push(context,
-              MaterialPageRoute(builder: (context) =>Scaffold()), // RETURN SCAFFOLD UNTIL WE HAVE HAIRFALL DART FILE
+              MaterialPageRoute(builder: (context) =>Hair()), // RETURN  HAIRFALL DART FILE
             );
           },
           child: Card(
