@@ -6,6 +6,7 @@ import 'package:pcod_helper/Screens/Home/test.dart';
 import 'package:pcod_helper/Screens/fitness_screen.dart';
 import 'package:pcod_helper/Services/auth.dart';
 import 'package:pcod_helper/Screens/Period_Tracker/Starter.dart';
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -154,6 +155,7 @@ class _HomeState extends State<Home> {
               ),
             )
           ),
+          SizedBox(height: 20,),
           Container(
             width: MediaQuery.of(context).size.width - 100,
             child: RaisedButton(

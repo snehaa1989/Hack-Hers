@@ -3,6 +3,7 @@ import 'package:pcod_helper/Screens/Authentication/SignIn.dart';
 import 'package:pcod_helper/Screens/wrapper.dart';
 import 'package:pcod_helper/Services/auth.dart';
 import 'package:provider/provider.dart';
+import 'package:splashscreen/splashscreen.dart';
 void main() {
   runApp(MyApp());
 }
@@ -19,5 +20,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
 
 
