@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:pcod_helper/Screens/Page1.dart';
+import 'package:pcod_helper/Screens/Page2.dart';
+import 'package:pcod_helper/Screens/Page3.dart';
 //import 'package:url_launcher/url_launcher.dart';
 /*void main(){
   runApp(Hair());
@@ -93,8 +96,8 @@ class _HairPageState extends State<HairPage> {
                   childAspectRatio: 0.85,
                   children: <Widget>[
                     categoryWidget('hair3', "Tips to Control Hairfall",),
-                    categoryWidget('hair2', "A guide to Healthier hair"),
-                    categoryWidget('hairfall1', "Grow back your hair"),
+                    categoryWidget1('hair2', "A guide to Healthier hair"),
+                    categoryWidget3('hairfall1', "Grow back your hair"),
                   ],
                 ),
               ),
@@ -142,8 +145,113 @@ class _HairPageState extends State<HairPage> {
       ),
       child: InkWell(
         onTap: (){
-
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Page1()),
+          );
        //FROM HERE LINK TO HAIR 1,2,3
+        },
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 20,),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('Images/$img.jpg'),
+                        fit: BoxFit.contain
+                    )
+                ),
+              ),
+            ),
+            SizedBox(height: 20,),
+            Container(
+              padding: EdgeInsets.all(20),
+              child: Text('$title', style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),textAlign: TextAlign.center,
+              ),
+            ),
+            SizedBox(height: 10,)
+          ],
+        ),
+      ),
+    );
+  }
+  Container categoryWidget1(String img, String title)
+  {
+    return Container(
+      margin: EdgeInsets.only(left: 10, right: 10, bottom: 20),
+      width: MediaQuery.of(context).size.width*0.3,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.all(Radius.circular(30)),
+          boxShadow: [BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 20,
+            spreadRadius: 1,
+            offset: Offset(0,10),
+          )]
+      ),
+      child: InkWell(
+        onTap: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Page2()),
+          );
+          //FROM HERE LINK TO HAIR 1,2,3
+        },
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 20,),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('Images/$img.jpg'),
+                        fit: BoxFit.contain
+                    )
+                ),
+              ),
+            ),
+            SizedBox(height: 20,),
+            Container(
+              padding: EdgeInsets.all(20),
+              child: Text('$title', style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),textAlign: TextAlign.center,
+              ),
+            ),
+            SizedBox(height: 10,)
+          ],
+        ),
+      ),
+    );
+  }
+  Container categoryWidget3(String img, String title)
+  {
+    return Container(
+      margin: EdgeInsets.only(left: 10, right: 10, bottom: 20),
+      width: MediaQuery.of(context).size.width*0.3,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.all(Radius.circular(30)),
+          boxShadow: [BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 20,
+            spreadRadius: 1,
+            offset: Offset(0,10),
+          )]
+      ),
+      child: InkWell(
+        onTap: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Page3()),
+          );
+          //FROM HERE LINK TO HAIR 1,2,3
         },
         child: Column(
           children: <Widget>[

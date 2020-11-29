@@ -3,12 +3,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Page1 extends StatefulWidget {
+class Page2 extends StatefulWidget {
   @override
-  _Page1State createState() => _Page1State();
+  _Page2State createState() => _Page2State();
 }
 
-class _Page1State extends State<Page1> {
+class _Page2State extends State<Page2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
