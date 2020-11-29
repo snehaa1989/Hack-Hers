@@ -4,6 +4,9 @@ import '../components/reusableCard.dart';
 import '../constants.dart';
 //import '../components/reusableCard.dart';
 //import '../components/reusableCard.dart';
+import 'package:pcod_helper/components/reusableCard1.dart';
+import 'package:pcod_helper/components/reusableCard2.dart';
+import 'package:pcod_helper/components/reusableCard3.dart';
 
 class Fitness extends StatefulWidget {
   @override
@@ -49,9 +52,9 @@ class _FitnessState extends State<Fitness> {
               scrollDirection: Axis.vertical,
               children: <Widget>[
                 ReusableCard(images:AssetImage('assets/yoga.PNG'),/*colors: Colors.yellow,*/head: 'YOGA',desc: 'Exercise more!',),
-                ReusableCard(images: AssetImage('assets/diet.jpg'),/*colors: Colors.pinkAccent,*/head: 'DIET',desc: 'Eat a Balanced Diet!'),
-                ReusableCard(images: AssetImage('assets/natural.jpg'),/*colors: Colors.lightGreenAccent*/head: 'LIFESTYLE TIPS!',desc: 'Cure Fast!'),
-                ReusableCard(images: AssetImage('assets/hair1.PNG'),/*colors: Colors.lightBlueAccent,*/head: 'HAIRFALL',desc: 'Reduce hairfall to look Beautiful!'),
+                ReusableCard1(images: AssetImage('assets/diet.jpg'),/*colors: Colors.pinkAccent,*/head: 'DIET',desc: 'Eat a Balanced Diet!'),
+                ReusableCard2(images: AssetImage('assets/natural.jpg'),/*colors: Colors.lightGreenAccent*/head: 'LIFESTYLE TIPS!',desc: 'Cure Fast!'),
+                ReusableCard3(images: AssetImage('assets/hair1.PNG'),/*colors: Colors.lightBlueAccent,*/head: 'HAIRFALL',desc: 'Reduce hairfall to look Beautiful!'),
               ],
             ),
           )
