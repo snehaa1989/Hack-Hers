@@ -96,7 +96,7 @@ class _CalendarState extends State<Calendar> {
                 color: Color.fromRGBO(59, 57, 60, 1),
                 fontSize: 16,
                 fontWeight: FontWeight.bold)),
-        onPressed: () => Navigator.of(context).pop(false));
+        onPressed: () => Navigator.of(context, rootNavigator: true).pop(false));
     showDialog(
       context: context,
       builder: (BuildContext context) => Dialog(
@@ -168,7 +168,7 @@ class _CalendarState extends State<Calendar> {
     _selectedEvents.add(event);
     _fetchEvents();
 
-    Navigator.pop(context);
+    Navigator.of(context, rootNavigator: true).pop();
   }
 
   // Delete doesnt refresh yet, thats it, then done!
