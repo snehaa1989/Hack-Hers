@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pcod_helper/Screens/Home/about.dart';
 import 'package:pcod_helper/Screens/Home/profile.dart';
 import 'package:pcod_helper/Screens/Home/test.dart';
 import 'package:pcod_helper/Screens/fitness_screen.dart';
@@ -76,7 +77,12 @@ class _HomeState extends State<Home> {
                         child: RaisedButton(
                           elevation: 10,
                           color: Colors.white,
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => AboutSection()),
+                            );
+                          },
                           child: Container(
                             width:  MediaQuery.of(context).size.width/3,
                             height: MediaQuery.of(context).size.height/4,

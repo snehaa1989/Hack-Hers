@@ -42,7 +42,7 @@ dev_dependencies:
   cloud_firestore: ^0.12.9+4
   provider : ^3.1.0
   js : ^0.6.2
-
+  carousel_slider: ^2.3.1
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
