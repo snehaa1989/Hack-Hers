@@ -123,7 +123,7 @@ class _ProductPageState extends State<ProductPage> {
                                   spreadRadius: 1
                               )]
                           ),
-                          child: Row(
+                          child: Column(
                             children: <Widget>[
                               Container(
                                 width: MediaQuery.of(context).size.width * 2.8/3,
@@ -131,6 +131,12 @@ class _ProductPageState extends State<ProductPage> {
                                 padding: EdgeInsets.all(50),
                                 child: Text('$selectText'),
                               ),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 2.8/3,
+                                height: 200,
+                                
+                                child: Image.asset("assets/$selectedImg.jpg", fit: BoxFit.fill,),
+                              )
                             ],
                           ),
                         ),
@@ -140,37 +146,6 @@ class _ProductPageState extends State<ProductPage> {
                   ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                color: Colors.white,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        FaIcon(FontAwesomeIcons.calendar),
-                        Text('Today')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        FaIcon(FontAwesomeIcons.dumbbell, color: Colors.orange,),
-                        Text('All Exercise', style: TextStyle(
-                            color: Colors.orange,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20
-                        ),)
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        Icon(Icons.settings),
-                        Text('Settings')
-                      ],
-                    ),
-                  ],
-                ),
-              )
             ],
           )
         ],
