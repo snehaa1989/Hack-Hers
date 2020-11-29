@@ -109,7 +109,7 @@ class _YogaPageState extends State<YogaPage> {
                   ],
                 ),
               ),
-              Container(
+              /*Container(
                 padding: EdgeInsets.symmetric(vertical: 10),
                 color: Colors.white,
                 child: Row(
@@ -139,7 +139,7 @@ class _YogaPageState extends State<YogaPage> {
                     ),
                   ],
                 ),
-              )
+              )*/
             ],
           )
         ],
