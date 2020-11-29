@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'item_Name.dart';
 //import '../screens/info_page.dart';
 import '../Screens/yoga1.dart';
-
+import '../Screens/lifestyle.dart';
 class ReusableCard2 extends StatelessWidget {
   ReusableCard2({@required this.images,@required this.head,@required this.desc});
   //final Color colors;
@@ -16,7 +16,7 @@ class ReusableCard2 extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             Navigator.push(context,
-              MaterialPageRoute(builder: (context) =>Yoga()), // RETURN YOGA UNTIL WE HAVE LIFESTYLE TIPS DART FILE
+              MaterialPageRoute(builder: (context) =>lifestyle()), // RETURN  LIFESTYLE TIPS DART FILE
             );
           },
           child: Card(
