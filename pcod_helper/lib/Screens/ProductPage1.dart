@@ -74,7 +74,7 @@ class _ProductPageState extends State<ProductPage> {
                                 padding: EdgeInsets.all(40),
                                 decoration: BoxDecoration(
                                     image: DecorationImage(
-                                        image: AssetImage('asset/$selectedImg.png'),
+                                        image: AssetImage('assets/$selectedImg.png'),
                                         fit: BoxFit.contain
 
                                 )

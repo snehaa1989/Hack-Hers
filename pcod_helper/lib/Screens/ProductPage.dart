@@ -42,7 +42,7 @@ class _ProductPageState extends State<ProductPage> {
               alignment: Alignment.centerLeft,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('asset/path.png'),
+                      image: AssetImage('assets/path.png'),
                       fit: BoxFit.contain
                   )
               ),
