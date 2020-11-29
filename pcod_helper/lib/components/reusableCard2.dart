@@ -16,7 +16,7 @@ class ReusableCard2 extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             Navigator.push(context,
-              MaterialPageRoute(builder: (context) =>Yoga()),
+              MaterialPageRoute(builder: (context) =>Yoga()), // RETURN YOGA UNTIL WE HAVE LIFESTYLE TIPS DART FILE
             );
           },
           child: Card(
