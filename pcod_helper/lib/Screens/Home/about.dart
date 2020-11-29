@@ -12,7 +12,7 @@ class _AboutSectionState extends State<AboutSection> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink[200],
+      backgroundColor: Colors.white,
       body: Container(
         child: Column(
           children: [
