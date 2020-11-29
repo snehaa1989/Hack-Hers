@@ -405,7 +405,7 @@ class _TestState extends State<Test> {
             color: Colors.pink,
             child: Text("Submit", style: TextStyle(color: Colors.white),),
             onPressed: (){
-              Firestore.instance.collection("test").document(_auth.getUid()).setData({
+              Firestore.instance.collection("test").document(_auth.getUid()).updateData({
                 "periods" : periods,
                 "Bleeding" : bleeding,
                 "hairgrowth" : hairgrowth,
