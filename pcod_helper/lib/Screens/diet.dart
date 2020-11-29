@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'ProductPage1.dart';
 import 'constants1.dart';
-void main(){
+/*void main(){
   runApp(MyApp());
-}
-class MyApp extends StatelessWidget {
+}*/
+class diet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
