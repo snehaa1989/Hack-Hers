@@ -29,6 +29,20 @@ class _FitnessState extends State<Fitness> {
                 ),
             ),
           ),
+        floatingActionButton: FloatingActionButton.extended(
+            onPressed: () {
+              //bmi screen
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => BMI()),
+              );
+            },
+            label: Text('BMI',style: TextStyle(color: Colors.pink),),
+            icon: Icon(Icons.emoji_emotions_outlined),
+            backgroundColor: Colors.black38,
+
+          ),
+          floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: 0,
             items: [
