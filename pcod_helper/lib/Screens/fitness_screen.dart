@@ -7,7 +7,7 @@ import '../constants.dart';
 import 'package:pcod_helper/components/reusableCard1.dart';
 import 'package:pcod_helper/components/reusableCard2.dart';
 import 'package:pcod_helper/components/reusableCard3.dart';
-
+import 'package:pcod_helper/Screens/Bmi-Calculator/BMI_main.dart';
 class Fitness extends StatefulWidget {
   @override
   _FitnessState createState() => _FitnessState();
