@@ -31,15 +31,7 @@ class _YogaPageState extends State<YogaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: IconButton(
-          onPressed: (){Navigator.of(context).pop();},
-          icon: Icon(Icons.arrow_back_ios),
-          color: Colors.black,
-        ),
-      ),
+      
       body: Stack(
         children: <Widget>[
           Column(
@@ -117,37 +109,7 @@ class _YogaPageState extends State<YogaPage> {
                   ],
                 ),
               ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 10),
-                color: Colors.white,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    Column(
-                      children: <Widget>[
-                        FaIcon(FontAwesomeIcons.calendar),
-                        Text('Today')
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        FaIcon(FontAwesomeIcons.dumbbell, color: Colors.orange,),
-                        Text('All Exercise', style: TextStyle(
-                            color: Colors.orange,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 20
-                        ),)
-                      ],
-                    ),
-                    Column(
-                      children: <Widget>[
-                        Icon(Icons.settings),
-                        Text('Settings')
-                      ],
-                    ),
-                  ],
-                ),
-              )
+
             ],
           )
         ],

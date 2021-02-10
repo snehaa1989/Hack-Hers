@@ -6,6 +6,7 @@ import 'package:pcod_helper/models/Usermodel.dart';
 import 'dart:async';
 
 class Auth{
+  String uid;
   final FirebaseAuth _auth = FirebaseAuth.instance;
   User _UserFromFirebase(FirebaseUser user){
     return user != null ? User(uid : user.uid) : null;
@@ -39,6 +40,7 @@ class Auth{
    try{
      AuthResult result = await _auth.createUserWithEmailAndPassword(email: email, password: Password);
      FirebaseUser user = result.user;
+     String uid = user.uid;
      await DataBaseService(uid: user.uid).UpdateUserData(0, false, false, false, false, false, false, false);
      return _UserFromFirebase(user) ;
    }
@@ -55,6 +57,9 @@ class Auth{
     catch(e){
       print(e);
     }
+  }
+  getUid(){
+    return uid;
   }
 }
 
